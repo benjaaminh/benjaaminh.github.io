@@ -126,7 +126,7 @@ const OtherPage = () => {
       <h2>Other Information</h2>
       <div className="section">
         <h3>Education</h3>
-        <div className='intro-text'>
+        <div className='contact-info'>{/*textbox has same properties as contact info box*/}
           <table className="table-dark table-striped">
             <tbody>
               <tr>
