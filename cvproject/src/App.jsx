@@ -6,11 +6,10 @@ import {
 } from "react-router-dom"
 import { Container, Navbar, Nav } from 'react-bootstrap';
 const Menu = () => {
-//navbar for links
+  //navbar for links
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand as={Link} to="/">My Resume</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link as={Link} to="/">Home</Nav.Link>
           <Nav.Link as={Link} to="/skills">Skills</Nav.Link>
@@ -34,16 +33,30 @@ const HomePage = () => {
         />
         <div className="textbox">
           <h2>Computer Engineering Bachelor Student</h2>
-          <div
-            className="own-text"
-          ><p>Currently studying Computer Engineering in Turku on my third year</p>
+          <div className="own-text">
+            <p>Currently studying Computer Engineering in Turku on my third year</p>
             <p>I have a multifaceted experience in programming</p>
             <p>I enjoy problem solving</p></div>
           <div className="contact-info">
             <h3>Contact Information</h3>
-            <p>Email: example@email.com</p>
-            <p>Phone: 123-456-7890</p>
-            {/* You can add more contact details here */}
+            <table className="table-dark table-striped">
+              <tbody>
+                <tr>
+                  <th>Email</th>
+                  <td>benjaminheikkala@gmail.com</td>
+                </tr>
+                <tr>
+                  <th>Phone</th>
+                  <td>+358458067333</td>
+                </tr>
+                <tr>
+                  <th>Github</th>
+                  <td>
+                    <a href="https://github.com/benjaaminh">https://github.com/benjaaminh</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -59,8 +72,8 @@ const SkillTable = ({ skills, experienceLevel }) => {
         <tbody>
           {skills.map((skill) => (
             <tr key={skill.name}>
-              <td>{skill.name}</td>
-              <td>{skill.description}</td>
+              <th className='skill-name'>{skill.name}</th>
+              <td className='skill-description'>{skill.description}</td>
             </tr>
           ))}
         </tbody>
@@ -116,31 +129,31 @@ const OtherPage = () => {
       <div className="section">
         <h3>Hobbies</h3>
         <div className='left-aligned-list'>
-        <ul>
-          {hobbies.map((hobby, index) => (
-            <li key={index}>{hobby}</li>
-          ))}
-        </ul>
+          <ul>
+            {hobbies.map((hobby, index) => (
+              <li key={index}>{hobby}</li>
+            ))}
+          </ul>
         </div>
       </div>
       <div className="section">
         <h3>Languages Spoken</h3>
         <div className='left-aligned-list'>
-        <ul>
-          {languages.map((language, index) => (
-            <li key={index}>{language}</li>
-          ))}
-        </ul>
+          <ul>
+            {languages.map((language, index) => (
+              <li key={index}>{language}</li>
+            ))}
+          </ul>
         </div>
       </div>
       <div className="section">
         <h3>Positions of Trust</h3>
         <div className='left-aligned-list'>
-        <ul>
-          {positionsOfTrust.map((position, index) => (
-            <li key={index}>{position}</li>
-          ))}
-        </ul>
+          <ul>
+            {positionsOfTrust.map((position, index) => (
+              <li key={index}>{position}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
@@ -194,12 +207,12 @@ const App = () => {
       <h1>My resumé</h1>
       <Menu />
       <Container className="py-4">
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/skills" element={<SkillsPage />} />
-        <Route path="/other" element={<OtherPage />} />
-        <Route path="/experience" element={<ExperiencePage />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/skills" element={<SkillsPage />} />
+          <Route path="/other" element={<OtherPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+        </Routes>
       </Container>
     </div>
   )
