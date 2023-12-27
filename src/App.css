@@ -9,6 +9,47 @@ body {
   background-color: #212529;
 }
 
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .profile-section {
+    /* Modify layout for smaller screens */
+    /* change from a grid to a column layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+
+  .profile-img {
+    /*  max-width: 100% to prevent image overflow */
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+
+
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid #333;
+}
+
+.textbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .own-text {
   width: 100%;
   padding: 10px;
@@ -46,37 +87,6 @@ body {
   padding: 10px;
 }
 
-.profile-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.profile-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-right: 20px;
-  border: 3px solid #333;
-}
-
-.textbox {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.intro-text {
-  width: 100%;
-  height: 100px;
-  padding: 8px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  resize: none;
-}
 
 .skills-content {
   padding: 20px;
@@ -203,4 +213,13 @@ h3.Advanced {
 a {
 text-decoration: none;
 color: #FFFFFF8C;
+}
+
+.education-box {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 100%; /* Or a specific width like max-width: 400px; */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
 }

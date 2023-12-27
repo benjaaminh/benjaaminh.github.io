@@ -46,11 +46,15 @@ const HomePage = () => {
               <tbody>
                 <tr>
                   <th>Email</th>
-                  <td>benjaminheikkala@gmail.com</td>
+                  <td>
+                  <a href='mailto:benjaminheikkala@gmail.com'>benjaminheikkala@gmail.com</a>
+                  </td>
                 </tr>
                 <tr>
                   <th>Phone</th>
-                  <td>+358458067333</td>
+                  <td>
+                    <a href='tel:+358458067333'>+358458067333</a>
+                    </td>
                 </tr>
                 <tr>
                   <th>Github</th>
@@ -88,16 +92,25 @@ const SkillTable = ({ skills, experienceLevel }) => {
 const SkillsPage = () => {
   const skillsByExperience = {//object of arrays
     Beginner: [
-      { name: 'Typescript', description: 'Used for university projects' },
+      { name: 'Typescript', description: 'Used for some university projects' },
       { name: 'C', description: 'Used for university projects in operating systems' },
+      { name: 'GraphQL', description: 'Used in some university projects' },
+
     ],
     Intermediate: [
-      { name: 'Python', description: 'Used for university projects in web development' },
+      { name: 'Python', description: 'Used for multiple university projects' },
       { name: 'REST API', description: 'Used in multiple projects' },
+      { name: 'Django', description: 'Used as backend in some projects' },
+      { name: 'MongoDB', description: 'Used as primary database technology in web development projects' },
+      { name: 'SQL', description: 'Used in some university projects' },
+
     ],
     Advanced: [
       { name: 'Javascript', description: 'Used for most of my web development projects' },
-      { name: 'React.js', description: 'Primary framework in most web development projects ' },
+      { name: 'React.js', description: 'Primary front-end framework in most web development projects ' },
+      { name: 'Node.js', description: 'Primary backend framework in most web development projects ' },
+      { name: 'Java', description: 'Used in many university projects' },
+
     ],
   };
 
@@ -126,7 +139,7 @@ const OtherPage = () => {
       <h2>Other Information</h2>
       <div className="section">
         <h3>Education</h3>
-        <div className='contact-info'>{/*textbox has same properties as contact info box*/}
+        <div className='education-box'>{/*textbox has same properties as contact info box*/}
           <table className="table-dark table-striped">
             <tbody>
               <tr>
