@@ -34,9 +34,12 @@ const HomePage = () => {
         <div className="textbox">
           <h2>Computer Engineering Bachelor Student</h2>
           <div className="own-text">
-            <p>Currently studying Computer Engineering in Turku on my third year</p>
-            <p>I have a multifaceted experience in programming</p>
-            <p>I enjoy problem solving</p></div>
+            <p>22 years old living in Turku, Finland</p>
+            <p>Studying Computer Engineering on my third year</p>
+            <p>I have a multiple years of experience in programming</p>
+            <p>I am a quick learner and enjoy problem solving</p>
+            <p>Work easily both alone and in groups</p>
+            </div>
           <div className="contact-info">
             <h3>Contact Information</h3>
             <table className="table-dark table-striped">
@@ -113,7 +116,6 @@ const SkillsPage = () => {
 };
 
 const OtherPage = () => {
-  const education = 'Your education details here';
   const hobbies = ['Working out', 'Playing the guitar', 'Playing video games'];
   const languages = ['Swedish - First language', 'Finnish - Second language', 'English - Proficient', 'German - Basics'];
   const positionsOfTrust = ['Worked as a tutor at Åbo Akademi University for new Computer Engineering students'
@@ -124,7 +126,22 @@ const OtherPage = () => {
       <h2>Other Information</h2>
       <div className="section">
         <h3>Education</h3>
-        <p>{education}</p>
+        <div className='intro-text'>
+          <table className="table-dark table-striped">
+            <tbody>
+              <tr>
+                <th>Åbo Akademi University</th>
+                <td>Bachelor of Technology, Computer Engineering</td>
+                <td>2021-</td>
+              </tr>
+              <tr>
+                <th>Topeliusgymnasiet</th>
+                <td>Upper Secondary School</td>
+                <td>2017-2020</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div className="section">
         <h3>Hobbies</h3>
