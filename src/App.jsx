@@ -5,6 +5,7 @@ import {
   Link,
 } from "react-router-dom"
 import { Container, Navbar, Nav } from 'react-bootstrap';
+import myface from './assets/myface.jpeg'
 const Menu = () => {
   //navbar for links
   return (
@@ -27,7 +28,7 @@ const HomePage = () => {
       <h1>Benjamin Heikkala</h1>
       <div className="profile-section">
         <img
-          src="https://petlandcarmel.com/wp-content/uploads/2023/02/1628793_800-600x450.jpg"
+          src={myface}
           alt="Profile"
           className="profile-img"
         />
@@ -94,22 +95,25 @@ const SkillsPage = () => {
     Beginner: [
       { name: 'Typescript', description: 'Used for some university projects' },
       { name: 'C', description: 'Used for university projects in operating systems' },
-      { name: 'GraphQL', description: 'Used in some university projects' },
+      { name: 'GraphQL', description: 'Used in some university projects as an alternative to REST' },
 
     ],
     Intermediate: [
-      { name: 'Python', description: 'Used for multiple university projects' },
       { name: 'REST API', description: 'Used in multiple projects' },
       { name: 'Django', description: 'Used as backend in some projects' },
       { name: 'MongoDB', description: 'Used as primary database technology in web development projects' },
-      { name: 'SQL', description: 'Used in some university projects' },
+      { name: 'SQL', description: 'Used in some university projects (Python SQLite API, mySQl, PostgreSQL)' },
+      { name: 'Git', description: 'Git is used for all version control in my projects' },
+      { name: 'Matlab', description: 'Used in control engineering and signal processing projects' },
+      { name: 'Simulink', description: 'Used in control engineering and signal processing projects' },
 
     ],
     Advanced: [
-      { name: 'Javascript', description: 'Used for most of my web development projects' },
-      { name: 'React.js', description: 'Primary front-end framework in most web development projects ' },
-      { name: 'Node.js', description: 'Primary backend framework in most web development projects ' },
-      { name: 'Java', description: 'Used in many university projects' },
+      { name: 'Python', description: 'Used for multiple university projects' },
+      { name: 'Javascript', description: 'Used for most of my web development projects, also Jest.js and Cypress' },
+      { name: 'React.js', description: 'Primary front-end library in most web development projects ' },
+      { name: 'Node.js', description: 'Primary backend in most web development projects ' },
+      { name: 'Java', description: 'Used in many university projects, also JUnit and JavaFX' },
 
     ],
   };
