@@ -66,7 +66,7 @@ const HomePage = () => {
                 <tr>
                   <th>LinkedIn</th>
                   <td>
-                    <a href="www.linkedin.com/in/benjamin-heikkala-5b90832a8">Link</a>
+                    <a href="https://linkedin.com/in/benjamin-heikkala-5b90832a8">Link</a>
                   </td>
                 </tr>
               </tbody>
