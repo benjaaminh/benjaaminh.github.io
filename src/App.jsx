@@ -63,6 +63,12 @@ const HomePage = () => {
                     <a href="https://github.com/benjaaminh">https://github.com/benjaaminh</a>
                   </td>
                 </tr>
+                <tr>
+                  <th>LinkedIn</th>
+                  <td>
+                    <a href="www.linkedin.com/in/benjamin-heikkala-5b90832a8">Link</a>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -104,9 +110,10 @@ const SkillsPage = () => {
       { name: 'MongoDB', description: 'Used as primary database technology in web development projects' },
       { name: 'SQL', description: 'Used in some university projects (Python SQLite API, mySQl, PostgreSQL)' },
       { name: 'Git', description: 'Git is used for all version control in my projects' },
-      { name: 'Matlab', description: 'Used in control engineering and signal processing projects' },
-      { name: 'Simulink', description: 'Used in control engineering and signal processing projects' },
-
+      { name: 'Matlab', description: 'Used in systems- and control engineering and signal processing projects' },
+      { name: 'Simulink', description: 'Used in systems- and control engineering and signal processing projects' },
+      { name: 'Spring boot', description: 'Used in universiy projects' },
+      { name: 'Linux', description: 'Used for operating systems and C programming projects' },
     ],
     Advanced: [
       { name: 'Python', description: 'Used for multiple university projects' },
@@ -198,7 +205,7 @@ const ExperiencePage = () => {
   const workExperiences = [
     {
       id: 1,
-      title: 'Factory Worker Trainee',
+      title: 'Factory Worker',
       company: 'Nordic Lights',
       location: 'Pietarsaari',
       date: 'Summer 2022, Summer 2023',
@@ -206,7 +213,7 @@ const ExperiencePage = () => {
     },
     {
       id: 2,
-      title: 'Factory Worker Trainee',
+      title: 'Factory Worker',
       company: 'Sirico Electronics',
       location: 'Pietarsaari',
       date: 'Aug 2021-Dec 2021',
