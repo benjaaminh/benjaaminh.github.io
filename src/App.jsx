@@ -100,9 +100,10 @@ const SkillsPage = () => {
   const skillsByExperience = {//object of arrays
     Beginner: [
       { name: 'Typescript', description: 'Used for some university projects' },
+      { name: 'Angular', description: 'Used for one project' },
       { name: 'C', description: 'Used for university projects in operating systems' },
       { name: 'GraphQL', description: 'Used in some university projects as an alternative to REST' },
-
+      { name: 'Docker', description: 'Used for containerizing some projects' },
     ],
     Intermediate: [
       { name: 'REST API', description: 'Used in multiple projects' },
@@ -227,7 +228,7 @@ const ExperiencePage = () => {
       {workExperiences.map((experience) => (
         <div key={experience.id} className="job">
           <h3>{experience.title}</h3>
-          <p>{experience.company}</p>
+          <b style={{color:'#ffbf7f'}}>{experience.company}</b>
           <p>{experience.location}</p>
           <p>{experience.date}</p>
           <b>Tasks:</b>
