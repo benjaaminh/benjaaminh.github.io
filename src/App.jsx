@@ -206,7 +206,7 @@ const ExperiencePage = () => {
   const workExperiences = [
     {
       id: 1,
-      title: 'Factory Worker',
+      title: 'Production Worker',
       company: 'Nordic Lights',
       location: 'Pietarsaari',
       date: 'Summer 2022, Summer 2023',
@@ -214,7 +214,7 @@ const ExperiencePage = () => {
     },
     {
       id: 2,
-      title: 'Factory Worker',
+      title: 'Production Worker',
       company: 'Sirico Electronics',
       location: 'Pietarsaari',
       date: 'Aug 2021-Dec 2021',
